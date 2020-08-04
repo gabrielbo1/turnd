@@ -43,7 +43,7 @@ func main() {
 	}
 
 	s, err := turn.NewServer(turn.ServerConfig{
-		Realm: *realm,
+		Realm: realm,
 		// Set AuthHandler callback
 		// This is called everytime a user tries to authenticate with the TURN server
 		// Return the key for that user, or false when no user is found

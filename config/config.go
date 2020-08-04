@@ -35,4 +35,5 @@ func EnvironmentVariableValue(variable EnvironmentVariable) string {
 	case Realm:
 		return getVariable(Realm, "pion.ly")
 	}
+	return ""
 }
